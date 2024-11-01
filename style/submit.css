@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-size: 0.9rem;
+    font-family: system-ui,'Segoe UI','Open Sans','Helvetica Neue',sans-serif;
+    color:#090909;
+}
+
+nav {
+    display:flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    height: 5rem;
+    gap:25%;
+    font-size: medium;
+}
+
+nav :hover {
+    color:rgb(230, 230, 230)
+}
+
+nav .logo {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+
+nav ul {
+    display:flex;
+    list-style: none;
+    background-color: black;
+    width:100%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color:rgb(113, 113, 113)
+}
+
+.header {
+    display:grid;
+    grid-template-areas:
+    'submit submit feature-1'
+    'submit submit feature-2'
+    'submit submit feature-3'
+    'footer footer footer';
+}
+
+.submit {
+    grid-area: submit;
+    min-height: 50rem;
+    min-width: 50rem;
+    background-image: url(/asset/img/OrderSuccess.png);
+    background-size: cover;
+    background-position: center;
+    color:black;
+    padding:1rem 2rem 2rem 2rem;
+}
+
+
+.purchase-success h2 {
+    grid-area: submit;
+    max-width: 80%;
+    background-color: black;
+    color:rgb(2, 2, 2);
+    font-size: 5rem;
+    padding:3rem 3rem 3rem 3rem;
+}
+
+
+.opening-paragraf {
+    grid-area: hero;
+    max-width: 50%;
+    background-color: none;
+    align-items: start;
+    justify-content: end;
+    color:rgb(224, 224, 224);
+    font-size: 0.8rem;
+    padding:40rem 3rem 3rem 3rem ;
+}
+
+.feature {
+    background-color:rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 1fr;
+    height: 1fr;
+}
+
+/* .feature-2 {
+    grid-area: feature-2;
+    background-color: none;
+    background-size: cover;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-color: none;
+    background-size: cover;
+}
+
+.feature-3 {
+    grid-area: feature-3;
+    background-color: none;
+    background-size: cover;
+} */
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    place-content: center;
+    text-align: center;
+    height: 4rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/*--- start responsive breakpoint*/
+
+/*tablet*/
+@media screen and (max-width: 768px){
+    nav ul {
+        width:50%;}
+    
+}
+
+/*mobile*/
+@media screen and (max-width: 576px){
+    nav ul {
+        width: 50%;}
+}
+/*end responsive breakpoint---*/

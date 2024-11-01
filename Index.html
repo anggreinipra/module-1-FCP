@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fujifilm</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="asset/img/Fujifilm Logo.png">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h4><a href="/Galery.html">Fujifilm</a></h4>
+            </div>
+            <ul class="nav-links"> 
+                <li><a href="#About">About</a></li>
+                <li><a href="#Products-h1">Products</a></li>
+                <li><a href="#Galery-Container">Galery</a></li>
+                <li><a href="#Form-header">Order</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+            <!--Beginning of content--> 
+
+        <main class="content-container">
+                <section class="About">
+                    <h1 id="About">About</h1>
+                </section>
+                <section class="About-text">
+                    <p> We believe that every precious moment deserves to be captured.</p>
+                    <p> We are a leading provider of cameras and accessories, offering a wide range of products for photographers of all skill levels.</p>
+                    <p> With over 10 years of experience in the industry, we are committed to providing quality products and the best customer service.</p><br>
+                    <p> Our mission is to help you find the right tools to explore your creativity.</p>
+                    <p> We also offer resources and tutorials to enhance your photography skills.</p>
+                    <p> Our vision to become the go-to destination for all photography enthusiasts by providing the best products and unmatched support.</p>
+                </section>
+
+                <section class="Products-h1">
+                    <h1 id="Products-h1">Products</h1>
+                </section>
+                <div class="Product-order"><p>Order and enjoy free shipping on your first purchase!</p>
+                </div>
+                    <div class="Products-list">
+                        <ul class="Products-list">
+                            <li><a href="GFX100.html">GFX Camera</a></li>
+                            <li><a href="GFXLens.html">GFX Lens</a></li>
+                            <li><a href="X-SeriesCamera.html">X-Series Camera</a></li>
+                            <li><a href="X-SeriesLens.html">X-Series Lens</a></li>
+                            <li><a href="X-SeriesPCompact.html">X-Series Premium Compact</a></li>
+                        </ul>
+                    </div>
+                    
+                
+                <section class="Galery-Container">
+                    <div class="Galery-Head">
+                        <h1 id="Galery-Container" >Galery</h1>
+                    </div>
+                    <div class="Galery-Caption">
+                        <p><a href="/Galery.html">Capture your color of live with us!</a></p>
+                    </div>
+                    <!-- <div class="Galery-Photo">
+                        <ul>
+                            <li class="Galery-Photo1"><a href="/catalogue/Galery.html"></a>XF10 | 1/250 sec; f/2.8; ISO 400</li>
+                            <li class="Galery-Photo2">XF10 | 1/160 sec; f/5.0; ISO 640</li>
+                            <li class="Galery-Photo3">XF10 | 1/100 sec; f/4.0; ISO 400</li>
+                        </ul>
+                    </div> -->
+                </section>
+
+                <section class="Form">
+                    <div class="Form-header">
+                        <h1 id="Form-header">Order</h1>
+                    </div>
+
+                    <div class="Form-container"Form-container>                
+                        <form class=Form-container action="/Submit.html">       
+                            
+                                <label for="Name"><strong>Name : </strong></label>
+                                <input type="text" name="name" placeholder="Input Name" required>
+                                <label for="Email"><strong>Email :</strong></label>
+                                <input type="text" email="email" placeholder="Input Email" required>
+                                <label for="Item"><strong>Item : </strong></label>
+
+                            <div class="Form-select">
+                                <select class=select-item name="Item" id="Item" required>
+                                <option value=""selected disabled>Select your order</option>
+                                <option value="GFX Camera">GFX Camera</option>
+                                <option value="GFX Lens">GFX Lens</option>
+                                <option value="X-Series Camera">X-Series Camera</option>
+                                <option value="X-Series Lens">X-Series Lens</option>
+                                <option value="X-Series Premium Compact">X-Series Premium Compact</option>
+                                </select>
+                            </div>
+                                <label for="Accessories"><strong>Accessories :</strong></label>
+                            <div class="Form-checkbox">
+                                <input type="checkbox" name="Accessories" id="Lens Hood">
+                                <label for="Lens Hood">Lens Hood</label>
+                                <input type="checkbox" name="Accessories" id="Protector Filter">
+                                <label for="Protector Filter">Protector Filter</label>
+                                <input type="checkbox" name="Accessories" id="Hand Grip">
+                                <label for="Hand Grip">Hand Grip</label>
+                                <input type="checkbox" name="Accessories" id="Leather Case">
+                                <label for="Leather Case">Leather Case</label>
+                            </div>
+                                
+                                <Label><strong>Delivery Type : </strong></Label>
+                            <div class="Delivery-Type">
+                                <label for="Delivery-Type">
+                                <input type="radio" name="Delivery Type" value="Pickup">Pickup</label>
+                                <label for="Delivery Type">
+                                <input type="radio" name="Delivery Type" value="Delivery">Delivery</label>
+                            </div>
+                                <section class="Delivery-to">
+                                <label for="street"><strong>Street Address:</strong></label>
+                                <input type="text" id="street" name="street" required>
+                                <label for="Detail"><strong>Detail Address:</strong></label>
+                                <textarea id="Detail Address" name="Detail Address" rows="10" cols="35" placeholder="Enter your detail here..." required></textarea>
+                                <label for="city"><strong>City : </strong></label>
+                                <input type="text" id="city" name="city" required>
+                                <label for="state"><strong>State: </strong></label>
+                                <input type="text" id="state" name="state" required>
+                                <label for="zip"><strong>ZIP Code: </strong></label>
+                                <input type="text" id="zip" name="zip" required pattern="\d{5}">
+                                <label for="country"><strong>Country:</strong></label>
+                                <select id="country" name="country" required>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Thailand">Thailand</option>
+                                </select>
+                                </section>
+
+                                <div class="Submit-button">
+                                <input type="Submit" value="Send Request"></input>
+                                </div>
+                            </form> 
+                    </div>
+                </section>
+
+                <section class="Contact">
+                    <div class="contact-header">
+                        <h1 id="Contact">Contact</h1>
+                    </div>
+
+                    <address class="address">
+                        <p>Contact us <a href="mailto:Sales_Fujifilm@example.com">Sales Fujifilm</a></p>
+                        <p>Visit us at: <a href="/https://fujifilm-x.id/store-locatorFujifilm.com"> fujifilm-x.id </a> <br>
+                        <a href="/https://www.google.com/search?sca_esv=b90d53d636259e2e&cs=0&output=search&q=Grand+Indonesia&ludocid=12703781993938620889&lsig=AB86z5U9w4nGjxn17h5dVsU2o7tV&sa=X&ved=2ahUKEwi4__PbuaiJAxUuT2cHHVbRLDwQ8G0oAHoECB4QAQ&biw=1106&bih=914&dpr=1.6">Mall Grand Indonesia</a></p>
+                        <p>East Mall 3A Floor. EM3A-23, Jl. M.H. Thamrin No.1, Kebon Melati, Tanah Abang, Jakarta 10310</p>
+                        Indonesia
+                    </address>
+                </section>
+            </div>
+                    <!--end of content-->  
+    </main>
+        <footer class="footer">
+            <p>&copy; 2024 RevoU Student - anggreinipra. All Rights Reserved<br>
+                (for Submission Module 1 Assignment Final Check Point - Program FSSE Paris Section, Oct 2024)</p>
+        </footer>
+    </body>
+
+</html>

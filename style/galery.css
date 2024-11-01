@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-size: 0.9rem;
+    font-family: system-ui,'Segoe UI','Open Sans','Helvetica Neue',sans-serif;
+    color:#090909;
+}
+
+nav {
+    display:flex;
+    position: fixed;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    height: 5rem;
+    width: 100%;
+    gap:25%;
+    font-size: medium;
+}
+
+nav :hover {
+    color:rgb(230, 230, 230)
+}
+
+nav .logo {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+
+nav ul {
+    display:flex;
+    list-style: none;
+    background-color: black;
+    width:100%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color:rgb(113, 113, 113)
+}
+
+.header {
+    display:grid;
+    grid-template-areas:
+    'hero hero feature-1'
+    'hero hero feature-2'
+    'hero hero feature-3';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 50rem;
+    min-width: 50rem;
+    background-image: url(/asset/img/Hero3.jpg);
+    background-size: cover;
+    background-position: center;
+    color:black;
+    padding-top:2rem;
+}
+
+
+.heading {
+    grid-area: hero;
+    max-width: 50%;
+    background-color: none;
+    color:rgb(255, 255, 255);
+    font-size: 2.8rem;
+    padding:3rem 3rem 3rem 3rem;
+}
+
+
+.opening-paragraf {
+    grid-area: submit;
+    max-width: 50%;
+    background-color: none;
+    align-items: start;
+    justify-content: end;
+    color:rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding:40rem 3rem 3rem 3rem ;
+}
+
+.feature {
+    background-color:rgb(10, 10, 10);
+    color:rgb(255, 255, 255);
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 1fr;
+    height: 1fr;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(/asset/img/GFX100.png);
+    background-size: cover;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(/asset/img/Hero4.jpg);
+    background-size: cover;
+}
+
+.feature-3 {
+    grid-area: feature-3;
+    background-image: url(/asset/img/Hero2.jpg);
+    background-size: cover;
+}
+
+
+
+/*--- start responsive breakpoint*/
+
+/*tablet*/
+@media screen and (max-width: 768px){
+    nav ul {
+        width:50%;}
+    
+}
+
+/*mobile*/
+@media screen and (max-width: 576px){
+    nav ul {
+        width: 50%;}
+}
+/*end responsive breakpoint---*/
